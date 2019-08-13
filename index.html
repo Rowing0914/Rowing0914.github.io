@@ -66,13 +66,19 @@
 <table width="840" border="0" align="center" cellspacing="0" cellpadding="20">
   <tbody><tr><td>
 
+
+
+<!-- ======= Your Name ======= -->
 <p align="center">
     <pageheading>Norio Kosaka(小坂 紀夫)</pageheading><br>
     <b>email</b>:
     <font id="email" style="display:inline;">kosakaboat[at]gmail.com</font>
-</p><table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  
+</p>
 
+
+
+<!-- ======= Introduction: describe your short Bio! ======= -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">  
   <tbody><tr>
     <td width="32%" valign="top"><a href="./images/selfie.png"><img src="./images/selfie.png" width="100%" style="border-radius:15px"></a>
     <p align="center">
@@ -88,34 +94,36 @@
       My ultimate goal is to build an agent which is able to play RPG games, e.g., Pokemon!! So, as you might guess, my interest lies on RL and Video Games. More specifically, I am interested in how people understand to play RPGs which require quite a comprehension to play well. Otherwise, you would end up being with a level 100 Pikachu around the bush of the first town!!
     </p>
 
-    </td>
-  </tr>
-</tbody></table>
+    </td></tr>
+  </tbody>
+</table>
 
+
+
+<!-- ======= News ======= -->
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
   <tbody><tr><td>
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     <ul>
-    <li> <a href="http://people.eecs.berkeley.edu/~pathak/#ASSEMBLIES19">Modular assemblies</a> won the <a href="https://virtualcreatures.github.io/" target="_blank">Virtual Creatures Competition</a> at GECCO'19!<br></li>
-    <!-- <li> <a href="#ICML19">Paper</a> on real-robot exploration via disagreement accepted at ICML'19!</li> -->
-    <li> Co-organized the <a href="https://futurecv.github.io/" target="_blank">"Computer Vision After 5 years"</a> workshop at CVPR'19.</li>
-    <li> Co-organized the <a href="https://tarl2019.github.io/" target="_blank">Task Agnostic Reinforcement Learning</a> workshop at ICLR'19.</li>
-    <li> <a href="http://people.eecs.berkeley.edu/~pathak/#ICLR19">ICLR'19 paper</a> on large-scale curiosity-driven learning covered in <a href="https://pathak22.github.io/large-scale-curiosity/index.html#media">The Economist and other media articles</a>.</li>
-    <li> Co-organized the <a href="http://pocv18.eecs.berkeley.edu/">Action, Perception and Organization</a> workshop at ECCV'18.</li>
-    <li> Received the <a href="https://research.fb.com/announcing-the-2018-cohort-of-facebook-fellows-and-emerging-scholars/" target="_blank">2018 Facebook Graduate Fellowship</a>. Thanks, Facebook!</li>
-    <li> <a href="http://people.eecs.berkeley.edu/~pathak/#ICML18">ICML'18 paper</a> on human exploration got covered in <a href="https://rach0012.github.io/humanRL_website/index.html#media">MIT Tech Review and other media articles</a>.</li>
-    <li> Received the <a href="https://snapresearchfellowship.splashthat.com/" target="_blank">2017 Snap Inc. Research Fellowship Award</a>. Thanks, Snapchat!</li>
-    <li> <a href="http://people.eecs.berkeley.edu/~pathak/#ICML17">ICML'17 paper</a> on curiosity-driven exploration got covered in <a href="https://pathak22.github.io/noreward-rl/index.html#media">MIT Tech Review and other media articles</a>.</li>
-    <li> Received the <a href="https://www.nvidia.com/en-us/research/graduate-fellowships/2017/deepak-pathak/" target="_blank">2017 NVIDIA Graduate Fellowship</a>. Thanks, NVIDIA! Complete list <a href="https://www.nvidia.com/en-us/research/graduate-fellowships/" target="_blank">here</a>.</li>
+    <li> Site Release!! </li>
+    <!-- <li> <a href="http://people.eecs.berkeley.edu/~pathak/#ASSEMBLIES19">Modular assemblies</a> won the <a href="https://virtualcreatures.github.io/" target="_blank">Virtual Creatures Competition</a> at GECCO'19!<br></li> -->
     </ul>
-  </td></tr>
-</tbody></table>
+  </td></tr></tbody>
+</table>
 
+
+
+<!-- ======= Publications ======= -->
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
   <tbody><tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading></td></tr>
 </tbody></table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tbody><tr>
+  <tbody>
+
+
+
+    <!-- ======= Put an Item from Here ======= -->
+    <tr>
     <td width="33%" valign="top" align="center"><a href="https://pathak22.github.io/exploration-by-disagreement/"><img src="./images/icml19.gif" alt="sym" width="100%" style="border-radius:15px"></a>
     </td><td width="67%" valign="top">
       <p><a href="https://pathak22.github.io/exploration-by-disagreement/" id="ICML19">
@@ -138,314 +146,19 @@
 
       <p align="justify"> <i id="icml19_abs" style="display: none;">Efficient exploration is a long-standing problem in sensorimotor learning. Major advances have been demonstrated in noise-free, non-stochastic domains such as video games and simulation. However, most of these formulations either get stuck in environments with stochastic dynamics or are too inefficient to be scalable to real robotics setups. In this paper, we propose a formulation for exploration inspired by the work in active learning literature. Specifically, we train an ensemble of dynamics models and incentivize the agent to explore such that the disagreement of those ensembles is maximized. This allows the agent to learn skills by exploring in a self-supervised manner <i>without any external reward</i>. Notably, we further leverage the disagreement objective to optimize the agent's policy in a <i>differentiable manner</i>, without using reinforcement learning, which results in a sample-efficient exploration. We demonstrate the efficacy of this formulation across a variety of benchmark environments including stochastic-Atari, Mujoco and Unity. Finally, we implement our differentiable exploration on a real robot which learns to interact with objects completely from scratch.</i></p>
 
-<pre xml:space="preserve" style="display: none;">@inproceedings{pathak19disagreement,
-  Author = {Pathak, Deepak and
-  Gandhi, Dhiraj and Gupta, Abhinav},
-  Title = {Self-Supervised Exploration
-  via Disagreement},
-  Booktitle = {ICML},
-  Year = {2019}
-}
-</pre>
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathak19disagreement,
+        Author = {Pathak, Deepak and
+        Gandhi, Dhiraj and Gupta, Abhinav},
+        Title = {Self-Supervised Exploration
+        via Disagreement},
+        Booktitle = {ICML},
+        Year = {2019}
+      }
+      </pre>
       </div>
     </td>
   </tr>
 
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="https://pathak22.github.io/modular-assemblies/"><img src="./images/assemblies19.gif" alt="sym" width="100%" style="border-radius:15px"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="https://pathak22.github.io/modular-assemblies/" id="ASSEMBLIES19">
-      <img src="./images/new.png" alt="[NEW]" width="6%" style="border-style: none">
-      <heading>Learning to Control Self-Assembling Morphologies:<br>A Study of Generalization via Modularity</heading></a><br>
-      <strong>Deepak Pathak*</strong>, Chris Lu*, Trevor Darrell, Phillip Isola and Alexei A. Efros<br>
-      <em>Pre-print on arXiv:1902.05546</em>, 2019 (under review)<br>
-      Winner of the <a href="https://virtualcreatures.github.io/"><em>Virtual Creatures Competition</em></a> at GECCO 2019<br>
-      </p>
-
-      <div class="paper" id="assemblies19">
-      <a href="https://pathak22.github.io/modular-assemblies/">webpage</a> |
-      <a href="https://pathak22.github.io/modular-assemblies/resources/assemblies.pdf">pdf</a> |
-      <a href="javascript:toggleblock(&#39;assemblies19_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;assemblies19&#39;)" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/1902.05546">arXiv</a> |
-      <a href="https://youtu.be/cg-RdkPtRiQ">video</a> |
-      <a href="https://pathak22.github.io/modular-assemblies/index.html#sourceCode">code</a>
-      <br>
-
-      <p align="justify"> <i id="assemblies19_abs" style="display: none;">Contemporary sensorimotor learning approaches typically start with an existing complex agent (e.g., a robotic arm), which they learn to control. In contrast, this paper investigates a modular co-evolution strategy: a collection of primitive agents learns to dynamically self-assemble into composite bodies while also learning to coordinate their behavior to control these bodies. Each primitive agent consists of a limb with a motor attached at one end. Limbs may choose to link up to form collectives. When a limb initiates a link-up action and there is another limb nearby, the latter is magnetically connected to the 'parent' limb's motor. This forms a new single agent, which may further link with other agents. In this way, complex morphologies can emerge, controlled by a policy whose architecture is in explicit correspondence with the morphology. We evaluate the performance of these <em>dynamic</em> and <em>modular</em> agents in simulated environments. We demonstrate better generalization to test-time changes both in the environment, as well as in the agent morphology, compared to static and monolithic baselines.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{pathak19assemblies,
-  Author = {Pathak, Deepak and
-  Lu, Chris and Darrell, Trevor and
-  Isola, Phillip and Efros, Alexei A.},
-  Title = {Learning to Control Self-
-  Assembling Morphologies: A Study of
-  Generalization via Modularity},
-  Booktitle = {arXiv preprint arXiv:1902.05546},
-  Year = {2019}
-}
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="https://pathak22.github.io/large-scale-curiosity/"><img src="./images/iclr19.jpg" alt="sym" width="100%" style="border-radius:15px"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="https://pathak22.github.io/large-scale-curiosity/" id="ICLR19">
-      <img src="./images/new.png" alt="[NEW]" width="6%" style="border-style: none">
-      <heading>Large-Scale Study of Curiosity-Driven Learning</heading></a><br>
-      Yuri Burda*, Harri Edwards*, <strong>Deepak Pathak*</strong>, Amos Storkey, Trevor Darrell and Alexei A. Efros &nbsp;&nbsp;&nbsp;&nbsp;(* equal contribution, alphabetical)<br>
-      <em>International Conference on Learning Representations (ICLR)</em>, 2019<br>
-      </p>
-
-      <div class="paper" id="iclr19">
-      <a href="https://pathak22.github.io/large-scale-curiosity/">webpage</a> |
-      <a href="https://pathak22.github.io/large-scale-curiosity/resources/largeScaleCuriosity2018.pdf">pdf</a> |
-      <a href="javascript:toggleblock(&#39;iclr19_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;iclr19&#39;)" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/1808.04355">arXiv</a> |
-      <a href="https://youtu.be/l1FqtAHfJLI">video</a>
-      <!-- <a href="https://pathak22.github.io/large-scale-curiosity/index.html#sourceCode">code</a> -->
-      <br>
-      Also presented at NIPS'18 Deep RL Workshop (Oral)<br>
-
-      <p align="justify"> <i id="iclr19_abs" style="display: none;">Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{pathakICLR19largescale,
-  Author = {Burda, Yuri and
-  Edwards, Harri and Pathak, Deepak and
-  Storkey, Amos and Darrell, Trevor and
-  Efros, Alexei A.},
-  Title = {Large-Scale Study of
-  Curiosity-Driven Learning},
-  Booktitle = {ICLR},
-  Year = {2019}
-}
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="https://pathak22.github.io/seg-by-interaction/"><img src="./images/cvprw18.jpg" alt="sym" width="100%" style="border-style: none"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="https://pathak22.github.io/seg-by-interaction/" id="CVPRW18">
-      <heading>Learning Instance Segmentation by Interaction</heading></a><br>
-      <strong>Deepak Pathak*</strong>, Yide Shentu*, Dian Chen*, Pulkit Agrawal*, Trevor Darrell, Sergey Levine and Jitendra Malik<br>
-      <!-- <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018<br> -->
-      <em><a href="https://sites.google.com/view/cvpr2018-robotic-vision/home" style="color:black" target="_blank">Deep Learning in Robotics Vision Workshop</a> (CVPR)</em>, 2018 (Oral)<br>
-      </p>
-
-      <div class="paper" id="cvprw18">
-      <a href="https://pathak22.github.io/seg-by-interaction/">webpage</a> |
-      <a href="http://people.eecs.berkeley.edu/~pathak/papers/cvprw18.pdf">pdf</a> |
-      <a href="javascript:toggleblock(&#39;cvprw18_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;cvprw18&#39;)" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/1806.08354">arXiv</a> |
-      <a href="https://pathak22.github.io/seg-by-interaction/index.html#sourceCode">code</a>
-      <br>
-
-      <p align="justify"> <i id="cvprw18_abs" style="display: none;">We present an approach for building an active agent that learns to segment its visual observations into individual objects by interacting with its environment in a completely self-supervised manner. The agent uses its current segmentation model to infer pixels that constitute objects and refines the segmentation model by interacting with these pixels. The model learned from over 50K interactions generalizes to novel objects and backgrounds. To deal with noisy training signal for segmenting objects obtained by self-supervised interactions, we propose robust set loss. A dataset of robot's interactions along-with a few human labeled examples is provided as a benchmark for future research. We test the utility of the learned segmentation model by providing results on a downstream vision-based control task of rearranging multiple objects into target configurations from visual inputs alone.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{pathakCVPRW18segByInt,
-      Author = {Pathak, Deepak and
-      Shentu, Yide and Chen, Dian and
-      Agrawal, Pulkit and Darrell, Trevor and
-      Levine, Sergey and Malik, Jitendra},
-      Title = {Learning Instance Segmentation
-        by Interaction},
-      Booktitle = {CVPR Workshop on Benchmarks for
-        Deep Learning in Robotic Vision},
-      Year = {2018}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/1807.07560"><img src="./images/compgan18.jpg" alt="sym" width="100%" style="border-radius:15px"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="https://arxiv.org/abs/1807.07560" id="CompGAN18">
-      <heading>Compositional GAN: Learning Conditional Image Composition</heading></a><br>
-      Samaneh Azadi, <strong>Deepak Pathak</strong>, Sayna Ebrahimi and Trevor Darrell<br>
-      Pre-print on arXiv:1807.07560, 2018
-      <!-- <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018<br> -->
-      </p>
-
-      <div class="paper" id="compgan18">
-      <a href="https://arxiv.org/abs/1807.07560">arXiv pdf</a> |
-      <a href="javascript:toggleblock(&#39;compgan18_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;compgan18&#39;)" class="togglebib">bibtex</a>
-      <!-- <a href="https://pathak22.github.io/large-scale-curiosity/index.html#sourceCode">code</a> -->
-      <br>
-
-      <p align="justify"> <i id="compgan18_abs" style="display: none;">Generative Adversarial Networks (GANs) can produce images of surprising complexity and realism, but are generally modeled to sample from a single latent source ignoring the explicit spatial interaction between multiple entities that could be present in a scene. Capturing such complex interactions between different objects in the world, including their relative scaling, spatial layout, occlusion, or viewpoint transformation is a challenging problem. In this work, we propose to model object composition in a GAN framework as a self-consistent composition-decomposition network. Our model is conditioned on the object images from their marginal distributions to generate a realistic image from their joint distribution by explicitly learning the possible interactions. We evaluate our model through qualitative experiments and user evaluations in both the scenarios when either paired or unpaired examples for the individual object images and the joint scenes are given during training. Our results reveal that the learned model captures potential interactions between the two object domains given as input to output new instances of composed scene at test time in a reasonable fashion.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{azadi18compgan,
-  Author = {Azadi, Samaneh and
-  Pathak, Deepak and
-  Ebrahimi, Sayna and Darrell, Trevor},
-  Title = {Compositional GAN: Learning
-  Conditional Image Composition},
-  Booktitle = {arXiv:1807.07560},
-  Year = {2018}
-}
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="http://pathak22.github.io/zeroshot-imitation/"><img src="./images/iclr18_1.gif" alt="sym" width="65%" border="1" style="border-color:black"><hr style="height:0pt; visibility:hidden; margin:0"><img src="./images/iclr18_2.gif" alt="sym" width="65%" border="1" style="border-color:black"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="http://pathak22.github.io/zeroshot-imitation/" id="ICLR18">
-      <heading>Zero-Shot Visual Imitation</heading></a><br>
-      <strong>Deepak Pathak*</strong>, Parsa Mahmoudieh*, Guanghao Luo*, Pulkit Agrawal*, Dian Chen, Yide Shentu, Evan Shelhamer, Jitendra Malik, Alexei A. Efros, Trevor Darrell<br>
-      <em>International Conference on Learning Representations (ICLR)</em>, 2018<br>
-      <!-- <strong style="color:red">Oral presentation <a href="https://vimeo.com/237270588" target="_blank" style="color:red">[video]</a></strong> -->
-      <strong style="color:black">(Oral presentation)</strong>
-      </p>
-
-      <div class="paper" id="iclr18">
-      <a href="http://pathak22.github.io/zeroshot-imitation/">webpage</a> |
-      <!-- <a href="http://pathak22.github.io/zeroshot-imitation/resources/iclr18.pdf">pdf</a> | -->
-      <a href="javascript:toggleblock(&#39;iclr18_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;iclr18&#39;)" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/1804.08606" target="_blank">arXiv</a> |
-      <a href="http://pathak22.github.io/zeroshot-imitation/index.html#sourceCode">code</a> |
-      <a href="http://pathak22.github.io/zeroshot-imitation/index.html#demoVideos">videos</a> |
-      <a href="https://openreview.net/forum?id=BkisuzWRW" target="_blank">open-review</a> |
-      <a href="https://www.dropbox.com/s/36efg1t3qn6i495/2018_04_ZeroShotImitation.pptx">slides</a>
-      <br>
-
-      <p align="justify"> <i id="iclr18_abs" style="display: none;">The current dominant paradigm for imitation learning relies on strong supervision of expert actions to learn both 'what' and 'how' to imitate. We pursue an alternative paradigm wherein an agent first explores the world without any expert supervision and then distills its experience into a goal-conditioned skill policy with a novel forward consistency loss. In our framework, the role of the expert is only to communicate the goals (i.e., what to imitate) during inference. The learned policy is then employed to mimic the expert (i.e., how to imitate) after seeing just a sequence of images demonstrating the desired task. Our method is 'zero-shot' in the sense that the agent never has access to expert actions during training or for the task demonstration at inference. We evaluate our zero-shot imitator in two real-world settings: complex rope manipulation with a Baxter robot and navigation in previously unseen office environments with a TurtleBot. Through further experiments in VizDoom simulation, we provide evidence that better mechanisms for exploration lead to learning a more capable policy which in turn improves end task performance.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{pathakICLR18zeroshot,
-    Author = {Pathak, Deepak and
-    Mahmoudieh, Parsa and Luo, Guanghao and
-    Agrawal, Pulkit and Chen, Dian and
-    Shentu, Yide and Shelhamer, Evan and
-    Malik, Jitendra and Efros, Alexei A. and
-    Darrell, Trevor},
-    Title = {Zero-Shot Visual Imitation},
-    Booktitle = {ICLR},
-    Year = {2018}
-}
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="https://rach0012.github.io/humanRL_website/"><img src="./images/icml18.png" alt="sym" width="100%" style="border-radius:15px"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="https://rach0012.github.io/humanRL_website/" id="ICML18">
-      <heading>Investigating Human Priors for Playing Video Games</heading></a><br>
-      Rachit Dubey, Pulkit Agarwal, <strong>Deepak Pathak</strong>, Thomas L. Griffiths, Alexei A. Efros<br>
-      <em>International Conference on Machine Learning (ICML)</em>, 2018<br>
-      <strong style="color:black">(Long oral presentation)</strong>
-      </p>
-
-      <div class="paper" id="icml18">
-      <a href="https://rach0012.github.io/humanRL_website/">webpage</a> |
-      <a href="http://people.eecs.berkeley.edu/~pathak/papers/icml18.pdf">pdf</a> |
-      <a href="javascript:toggleblock(&#39;icml18_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;icml18&#39;)" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/1802.10217">arXiv</a> |
-      <a href="https://youtu.be/Ol0-c9OE3VQ" target="_blank">video</a>
-      <br>
-      Also presented at ICLR'18 Workshop track.<br>
-
-      <p align="justify"> <i id="icml18_abs" style="display: none;">What makes humans so good at solving seemingly complex video games? Unlike computers, humans bring in a great deal of prior knowledge about the world, enabling efficient decision making. This paper investigates the role of human priors for solving video games. Given a sample game, we conduct a series of ablation studies to quantify the importance of various priors on human performance. We do this by modifying the video game environment to systematically mask different types of visual information that could be used by humans as priors. We find that removal of some prior knowledge causes a drastic degradation in the speed with which human players solve the game, e.g. from 2 minutes to over 20 minutes. Furthermore, our results indicate that general priors, such as the importance of objects and visual consistency, are critical for efficient game-play.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{pathakICML18human,
-    Author = {Dubey, Rachit and Agrawal, Pulkit
-    and Pathak, Deepak and Griffiths, Thomas L.
-    and Efros, Alexei A.},
-    Title = {Investigating Human Priors for
-    Playing Video Games},
-    Booktitle = {ICML},
-    Year = {2018}
-}
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="http://pathak22.github.io/noreward-rl/"><img src="./images/icml17_1.gif" alt="sym" width="49%" style="border-radius:15px">&nbsp;<img src="./images/icml17_2.gif" alt="sym" width="49%" style="border-radius:15px"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="http://pathak22.github.io/noreward-rl/" id="ICML17">
-      <heading>Curiosity-driven Exploration by Self-supervised Prediction</heading></a><br>
-      <strong>Deepak Pathak</strong>, Pulkit Agrawal, Alexei A. Efros and Trevor Darrell<br>
-      <em>International Conference on Machine Learning (ICML)</em>, 2017<br>
-      <strong><a href="https://vimeo.com/237270588" target="_blank" style="color:black">(Oral presentation link)</a></strong>
-      </p>
-      <div class="paper" id="icml17">
-      <a href="http://pathak22.github.io/noreward-rl/">webpage</a> |
-      <a href="http://pathak22.github.io/noreward-rl/resources/icml17.pdf">pdf</a> |
-      <a href="javascript:toggleblock(&#39;icml17_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;icml17&#39;)" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/1705.05363">arXiv</a> |
-      <a href="http://pathak22.github.io/noreward-rl/index.html#sourceCode">code</a> |
-      <a href="http://pathak22.github.io/noreward-rl/index.html#demoVideo">video</a> |
-      <a href="http://pathak22.github.io/noreward-rl/index.html#media">in the media</a>
-      <br>
-      Also presented at CVPR'17 <a href="http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/" style="color:black" target="_blank">Robotic Vision Workshop</a> (Oral)<br>
-
-      <p align="justify"> <i id="icml17_abs" style="display: none;">In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: <i>VizDoom</i> and <i>Super Mario Bros</i>. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{pathakICMl17curiosity,
-    Author = {Pathak, Deepak and
-    Agrawal, Pulkit and
-    Efros, Alexei A. and
-    Darrell, Trevor},
-    Title = {Curiosity-driven Exploration
-    by Self-supervised Prediction},
-    Booktitle = {ICML},
-    Year = {2017}
-}</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="33%" valign="top" align="center"><a href="https://junyanz.github.io/BicycleGAN"><img src="./images/nips17.gif" alt="sym" width="100%" style="border-radius:15px"></a>
-    </td><td width="67%" valign="top">
-      <p><a href="https://junyanz.github.io/BicycleGAN" id="NIPS17">
-      <heading>Toward Multimodal Image-to-Image Translation</heading></a><br>
-      Jun-Yan Zhu, Richard Zhang, <strong>Deepak Pathak</strong>, Trevor Darrell, Alexei A. Efros, Oliver Wang, Eli Shechtman<br>
-      <em>Advances in Neural Information Processing Systems (NIPS)</em>, 2017<br>
-      </p>
-
-      <div class="paper" id="nips17">
-      <a href="https://junyanz.github.io/BicycleGAN">webpage</a> |
-      <a href="http://people.eecs.berkeley.edu/~pathak/papers/nips17.pdf">pdf</a> |
-      <a href="javascript:toggleblock(&#39;nips17_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;nips17&#39;)" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/1711.11586">arXiv</a> |
-      <a href="https://github.com/junyanz/BicycleGAN">code</a> |
-      <a href="https://youtu.be/JvGysD2EFhw">video</a>
-      <br>
-
-      <p align="justify"> <i id="nips17_abs" style="display: none;">Many image-to-image translation problems are ambiguous, as a single input image may correspond to multiple possible outputs. In this work, we aim to model a distribution of possible outputs in a conditional generative modeling setting. The ambiguity of the mapping is distilled in a low-dimensional latent vector, which can be randomly sampled at test time. A generator learns to map the given input, combined with this latent code, to the output. We explicitly encourage the connection between output and the latent code to be invertible. This helps prevent a many-to-one mapping from the latent code to the output during training, also known as the problem of mode collapse, and produces more diverse results. We explore several variants of this approach by employing different training objectives, network architectures, and methods of injecting the latent code. Our proposed method encourages bijective consistency between the latent encoding and output modes. We present a systematic comparison of our method and other variants on both perceptual realism and diversity.</i></p>
-
-<pre xml:space="preserve" style="display: none;">@inproceedings{zhu2017multimodal,
-    Author = {Zhu, Jun-Yan and Zhang, Richard
-    and Pathak, Deepak and Darrell, Trevor
-    and Efros, Alexei A and Wang, Oliver
-    and Shechtman, Eli},
-    Title = {Toward Multimodal Image-to-Image
-    Translation},
-    Booktitle = {NIPS},
-    Year = {2017}
-}
-</pre>
-      </div>
-    </td>
-  </tr>
 
   <tr>
     <td width="33%" valign="top" align="center"><a href="http://people.eecs.berkeley.edu/~pathak/unsupervised_video/"><img src="./images/cvpr17.jpg" alt="sym" width="100%" style="border-radius:15px"></a>
