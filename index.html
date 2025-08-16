@@ -1,82 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- Borrowed the template from url=(0040)http://people.eecs.berkeley.edu/~pathak/ -->
 <html class="gr__people_eecs_berkeley_edu">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
     <style type="text/css">
-        /* Design Credits: Jon Barron and Abhishek Kar and Saurabh Gupta */
         a {
             color: #1772d0;
             text-decoration: none;
         }
-
         a:focus, a:hover {
             color: #f09228;
             text-decoration: none;
         }
-
         body, td, th {
             font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
             font-size: 16px;
             font-weight: 400
         }
-
-        heading {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 19px;
-            font-weight: 1000
+        heading { font-size: 19px; font-weight: 1000 }
+        strong { font-size: 16px; font-weight: 800 }
+        sectionheading { font-size: 22px; font-weight: 600 }
+        pageheading { font-size: 38px; font-weight: 400 }
+        /* Dropdown pitch styling */
+        details.pitch { margin-top: 6px; }
+        details.pitch > summary {
+          cursor: pointer;
+          font-weight: 600;
+          list-style: none;
         }
-
-        strong {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 16px;
-            font-weight: 800
-        }
-
-        strongred {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            color: 'red';
-            font-size: 16px
-        }
-
-        sectionheading {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 22px;
-            font-weight: 600
-        }
-
-        pageheading {
-            font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-            font-size: 38px;
-            font-weight: 400
-        }
+        details.pitch > summary::-webkit-details-marker { display: none; }
+        details.pitch > summary::after { content: " ▼"; font-weight: 400; }
+        details.pitch[open] > summary::after { content: " ▲"; }
     </style>
-    <!--   <link rel="icon" type="image/png" href="http://people.eecs.berkeley.edu/~pathak/images/seal_icon.png"> -->
-    <script async="" src="./images/analytics.js"></script>
-    <script type="text/javascript" src="./images/hidebib.js"></script>
     <title>Norio Kosaka</title>
-    <meta name="Norio Kosaka&#39;s Berkeley Homepage" http-equiv="Content-Type" content="Norio Kosaka&#39;s Homepage">
     <link href="./images/css" rel="stylesheet" type="text/css">
-    <!-- Start : Google Analytics Code -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-64069893-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- End : Google Analytics Code -->
-    <!-- Scramble Script by Jeff Donahue -->
-    <script src="./images/scramble.js"></script>
 </head>
 
 <body data-gr-c-s-loaded="true">
@@ -85,58 +41,12 @@
     <tr>
         <td>
 
-
-            <!-- ======= Your Name ======= -->
             <p align="center">
                 <pageheading>Norio Kosaka (小坂 紀夫)</pageheading>
                 <br>
                 <b>email</b>:
                 <font id="email" style="display:inline;">kosakaboat[at]gmail.com</font>
             </p>
-
-
-            <!-- ======= Introduction: describe your short Bio! ======= -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-
-                    <!-- ======= Information about You ======= -->
-                    <!-- Selfie -->
-                    <td width="32%" valign="top"><a href="./images/selfie.png"><img src="./images/selfie.png"
-                                                                                    width="100%"
-                                                                                    style="border-radius:15px"></a>
-
-                        <!-- Your Public Exposures -->
-                        <p align="center">
-                            <a href="https://drive.google.com/open?id=1fQKvBOkFSsUMuny-xQteCJN3DEpGVdgW">CV</a> |
-                            <a href="https://scholar.google.co.uk/citations?user=dIpkfPAAAAAJ&hl=en">Scholar</a> |
-                            <a href="https://github.com/Rowing0914"><strong>Github</strong></a> |
-                            <a href="https://www.linkedin.com/in/norio-kosaka-b73701117/">LinkedIn</a>
-                        </p>
-                    </td>
-
-                    <!-- ======= Short Bio ======= -->
-                    <td width="68%" valign="top" align="justify">
-                        <p>
-                            Norio completed an MSc in Mathematics at Birkbeck, University of London, with a thesis
-                            titled "Overview of Riemann surfaces." with the supervision of
-                            <a href="https://www.researchgate.net/profile/Ben-Fairbairn">Prof. Ben Fairbairn</a>.
-                            He also did an MSc in Machine Learning with Distinction at Royal Holloway University of
-                            London, focusing on the intersection of Reinforcement Learning and Robotics for his Master's
-                            Thesis, under the guidance of <a href="http://www.cs.rhul.ac.uk/~chrisw/">Prof. Chris
-                            Watkins</a>.
-                        </p>
-
-                        <p>
-                            Research interests: Mathematics (Riemann surface, Hyperbolic geometry, and Algebric
-                            geometry) and Machine / Reinforcement Learning
-                        </p>
-
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
 
             <!-- ======= Education ======= -->
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
@@ -145,41 +55,15 @@
                     <td>
                         <sectionheading>&nbsp;&nbsp;Education</sectionheading>
                         <ul>
-
-                            <li>MSc in Mathematics (Merit),
-                                <span style="font-weight: bold;">
-          <a href="http://www.bbk.ac.uk/study/2021/postgraduate/programmes/TMSMATHS_C/">Birkbeck, University of London</a>
-        </span>
-                                <span style="float:right;">Oct. 2021 - Oct. 2023</span>
-                            </li>
-
-                            <li>Graduate Certificate in Pure Mathematics (Merit),
-                                <span style="font-weight: bold;">
-          <a href="http://www.bbk.ac.uk/study/2021/postgraduate/programmes/GCGMTHDJ_C/">Birkbeck, University of London</a>
-        </span>
-                                <span style="float:right;">Jan. 2021 - Jul. 2021</span>
-                            </li>
-
-                            <li>MSc Machine Learning (Distinction),
-                                <span style="font-weight: bold;">
-          <a href="https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/computer-science/">Royal Holloway, University of London</a>
-        </span>
-                                <span style="float:right;">Sep. 2018 - Sep. 2019</span>
-                            </li>
-
-                            <li>B.A. in Commerce (GPA: 3.26),
-                                <span style="font-weight: bold;">
-          <a href="https://global.rakuten.com/corp/">Waseda University, Tokyo</a>
-        </span>
-                                <span style="float:right;">Apr. 2011 - Mar. 2015</span>
-                            </li>
-
+                            <li>MSc in Mathematics (Merit), <b>Birkbeck, University of London</b> <span style="float:right;">Oct. 2021 - Oct. 2023</span></li>
+                            <li>Graduate Certificate in Pure Mathematics (Merit), <b>Birkbeck, University of London</b> <span style="float:right;">Jan. 2021 - Jul. 2021</span></li>
+                            <li>MSc Machine Learning (Distinction), <b>Royal Holloway, University of London</b> <span style="float:right;">Sep. 2018 - Sep. 2019</span></li>
+                            <li>B.A. in Commerce (GPA: 3.26), <b>Waseda University, Tokyo</b> <span style="float:right;">Apr. 2011 - Mar. 2015</span></li>
                         </ul>
                     </td>
                 </tr>
                 </tbody>
             </table>
-
 
             <!-- ======= Work Experience ======= -->
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
@@ -188,410 +72,124 @@
                     <td>
                         <sectionheading>&nbsp;&nbsp;Work Experience</sectionheading>
                         <ul>
-                            <li>Researcher,
-                                <span style="font-weight: bold;">
-          <a href="https://clova.ai/ko">LY Corp.</a>
-        </span>
-                                <span style="float:right;">Oct. 2023 - </span>
-                            </li>
-
-                            <li>Researcher,
-                                <span style="font-weight: bold;">
-          <a href="https://clova.ai/ko">LINE Corp.</a>
-        </span>
-                                <span style="float:right;">Jul. 2022 - Oct. 2023</span>
-                            </li>
-
-                            <li>Research Engineer,
-                                <span style="font-weight: bold;">
-          <a href="https://clova.ai/ko">NAVER Clova AI</a>
-        </span>
-                                <span style="float:right;">Nov. 2020 - </span>
-                            </li>
-
-                            <li>Research Intern,
-                                <span style="font-weight: bold;">
-          <a href="https://clova.ai/ko">NAVER Clova AI</a>
-        </span>
-                                <span style="float:right;">Feb. 2020 - Apr. 2020</span>
-                            </li>
-
-                            <li>Research Intern,
-                                <span style="font-weight: bold;">
-          <a href="https://tech-ai.panasonic.com/en/">Panasonic</a>
-        </span>
-                                <span style="float:right;">Sep. 2019 - Dec. 2019</span>
-                            </li>
-
-                            <li>Research Intern,
-                                <span style="font-weight: bold;">
-          <a href="http://www.theconstructsim.com/">The Construct</a>
-        </span>
-                                <span style="float:right;">Apr. 2019 - Jul. 2019</span>
-                            </li>
-
-                            <li>DL/AI Research Engineer,
-                                <span style="font-weight: bold;">
-          <a href="https://global.rakuten.com/corp/">Rakuten Inc.</a>
-        </span>
-                                <span style="float:right;">Jan. 2018 - Sep. 2018</span>
-                            </li>
-
-                            <li>Data Scientist / Marketer,
-                                <span style="font-weight: bold;">
-          <a href="https://global.rakuten.com/corp/">Rakuten Inc.</a>
-        </span>
-                                <span style="float:right;">Apr. 2015 - Jan. 2018</span>
-                            </li>
-
+                            <li>Researcher, <b>LY Corp.</b> <span style="float:right;">Oct. 2023 - </span></li>
+                            <li>Researcher, <b>LINE Corp.</b> <span style="float:right;">Jul. 2022 - Oct. 2023</span></li>
+                            <li>Research Engineer, <b>NAVER Clova AI</b> <span style="float:right;">Nov. 2020 - </span></li>
+                            <li>Research Intern, <b>NAVER Clova AI</b> <span style="float:right;">Feb. 2020 - Apr. 2020</span></li>
+                            <li>Research Intern, <b>Panasonic</b> <span style="float:right;">Sep. 2019 - Dec. 2019</span></li>
+                            <li>Research Intern, <b>The Construct</b> <span style="float:right;">Apr. 2019 - Jul. 2019</span></li>
+                            <li>DL/AI Research Engineer, <b>Rakuten Inc.</b> <span style="float:right;">Jan. 2018 - Sep. 2018</span></li>
+                            <li>Data Scientist / Marketer, <b>Rakuten Inc.</b> <span style="float:right;">Apr. 2015 - Jan. 2018</span></li>
                         </ul>
                     </td>
                 </tr>
                 </tbody>
             </table>
-
-
-            <!-- ======= Mathematics ======= -->
-            <table width="100%" align="center" border="0" cellpadding="10">
-                <tbody>
-                <tr>
-                    <td>
-                        <sectionheading>&nbsp;&nbsp;Mathematics</sectionheading>
-                        <ul>
-                            <li>
-                                <a href="https://www.researchgate.net/publication/364958448_Introduction_to_ch-boundedness">
-                                    <heading>Introduction to χ-boundedness</heading>
-                                </a>
-                                <strong>Norio Kosaka</strong>
-                                <em>Essay Project</em>, 2022.
-                            </li>
-                            <li>
-                                <a href="https://www.researchgate.net/publication/376489348_OVERVIEW_OF_RIEMANN_SURFACES">
-                                    <heading>Overview of Riemann Surfaces</heading>
-                                </a>
-                                <a href="https://rowing0914.github.io/pdf/BBK_Thesis-slides.pdf">
-                                    <heading> (Talk)</heading>
-                                </a>
-                                <strong>Norio Kosaka</strong>
-                                <em>MSc Thesis at Birkbeck, University of London</em>, 2023.
-                            </li>
-                            <li>
-                                <a href="https://rowing0914.github.io/pdf/fuchsian_groups.pdf">
-                                    <heading>Visualizing Dirichlet Domains</heading>
-                                </a>
-                                <strong>Norio Kosaka</strong>
-                                <em>Project</em>, 2024.
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
 
             <!-- ======= Publications ======= -->
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-                <tbody>
-                <tr>
-                    <td>
-                        <sectionheading>&nbsp;&nbsp;Machine Learning</sectionheading>
-                    </td>
-                </tr>
-                </tbody>
+                <tbody><tr><td><sectionheading>&nbsp;&nbsp;Machine Learning</sectionheading></td></tr></tbody>
             </table>
+
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                 <tbody>
 
-                    
+                <!-- RLC 2025 -->
                 <tr>
-                    <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/2410.11833"><img
-                            src="./images/paper_talk/rlc2025-teaser-savo.png" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://arxiv.org/abs/2410.11833" id="neurips_dppo">
-                                <img src="./images/new.png" alt="[NEW]" width="6%" style="border-style: none">
-                                <heading>Mitigating Suboptimality of Deterministic Policy Gradients in Complex Q-functions</heading>
-                            </a><br>
-                            <strong>Ayush Jain, Norio Kosaka, Xinhu Li, Kyung-Min Kim, Erdem Bıyık, Joseph J. Lim</strong><br>
-                            <em>Reinforcement Learning Conference (RLC)</em>, 2025<br>
-                        </p>
-                    </td>
-                </tr>
-                    
-                    
-                <tr>
-                    <td width="33%" valign="top" align="center"><a href="https://openreview.net/pdf?id=9wBE2nl9Mh"><img
-                            src="./images/paper_talk/icml-2024-arlet.png" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://openreview.net/pdf?id=9wBE2nl9Mh" id="neurips_dppo">
-                                <heading>Enhancing Actor-Critic Decision-Making with Afterstate Models for Continuous Control</heading>
-                            </a><br>
-                            <strong>Norio Kosaka</strong><br>
-                            <em>ICML Workshop: Aligning Reinforcement Learning Experimentalists and Theorists</em>, 2024<br>
-                        </p>
-                    </td>
-                </tr>
-                    
-                <tr>
-                    <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/2301.12842"><img
-                            src="./images/paper_talk/NeurIPS2023_dppo.png" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://arxiv.org/abs/2301.12842" id="neurips_dppo">
-                                <heading>Direct Preference-based Policy Optimization without Reward Modeling</heading>
-                            </a><br>
-                            <strong>Gaon An*, Junhyeok Lee*, Xingdong Zuo, Norio Kosaka, Kyung-Min Kim, Hyun Oh
-                                Song</strong><br>
-                            <em>Neural Information Processing Systems (NeurIPS)</em>, 2023<br>
-                        </p>
-                    </td>
+                  <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/2410.11833"><img src="./images/paper_talk/rlc2025-teaser-savo.png" width="200" height="100" style="border-radius:15px"></a></td>
+                  <td width="67%" valign="top">
+                    <p>
+                      <a href="https://arxiv.org/abs/2410.11833"><heading>Mitigating Suboptimality of Deterministic Policy Gradients in Complex Q-functions</heading></a><br>
+                      <strong>Ayush Jain, Norio Kosaka, Xinhu Li, Kyung-Min Kim, Erdem Bıyık, Joseph J. Lim</strong><br>
+                      <em>Reinforcement Learning Conference (RLC)</em>, 2025<br>
+                    </p>
+                    <details class="pitch"><summary>Interview pitch</summary>
+                      We introduce <b>SAVO</b>, a successive-actor method that prunes low-value regions in complex Q-landscapes so TD3 avoids local optima, delivering higher returns and better sample efficiency across MuJoCo, Adroit, RecSim and gridworld.
+                    </details>
+                  </td>
                 </tr>
 
+                <!-- ICML 2024 WS -->
                 <tr>
-                    <td width="33%" valign="top" align="center"><a
-                            href="https://openreview.net/forum?id=MljXVdp4A3N"><img
-                            src="./images/paper_talk/ICLR2022_AGILE_teaser.gif" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://openreview.net/forum?id=MljXVdp4A3N" id="ICLR2022_AGILE">
-                                <heading>Know Your Action Set: Learning Action Relations for Reinforcement Learning
-                                </heading>
-                            </a><br>
-                            <strong>Ayush Jain*, Norio Kosaka*, Kyung-Min Kim, Joseph J Lim</strong><br>
-                            <em>International Conference on Learning Representations (ICLR) 2022</em>, Apr. 2022<br>
-                        </p>
-                    </td>
+                  <td width="33%" valign="top" align="center"><a href="https://openreview.net/pdf?id=9wBE2nl9Mh"><img src="./images/paper_talk/icml-2024-arlet.png" width="200" height="100" style="border-radius:15px"></a></td>
+                  <td width="67%" valign="top">
+                    <p>
+                      <a href="https://openreview.net/pdf?id=9wBE2nl9Mh"><heading>Enhancing Actor-Critic Decision-Making with Afterstate Models</heading></a><br>
+                      <strong>Norio Kosaka</strong><br>
+                      <em>ICML Workshop</em>, 2024<br>
+                    </p>
+                    <details class="pitch"><summary>Interview pitch</summary>
+                      We make critics evaluate the predicted <b>afterstate</b> (next state) rather than raw actions, simplifying value estimation; plugged into DDPG/SAC this yields faster, stabler learning on MuJoCo, PaintGym and RecSim.
+                    </details>
+                  </td>
                 </tr>
 
+                <!-- NeurIPS 2023 -->
                 <tr>
-                    <td width="33%" valign="top" align="center"><a href="https://arxiv.org/pdf/2003.00370.pdf"><img
-                            src="./images/paper_talk/IROS2020_PlaNetBayes.png" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://arxiv.org/pdf/2003.00370.pdf" id="IROS2020_PlaNetBayes">
-                                <!-- <img src="./images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                                <heading>PlaNet of the Bayesians: Reconsidering and Improving Deep Planning Network by
-                                    Incorporating Bayesian Inference
-                                </heading>
-                            </a><br>
-                            <strong>Masashi Okada, Norio Kosaka, Tadahiro Taniguchi</strong><br>
-                            <em>International Conference on Intelligent Robots and Systems(IROS) 2020, USA</em>, Oct.
-                            2020<br>
-                        </p>
-                    </td>
+                  <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/2301.12842"><img src="./images/paper_talk/NeurIPS2023_dppo.png" width="200" height="100" style="border-radius:15px"></a></td>
+                  <td width="67%" valign="top">
+                    <p>
+                      <a href="https://arxiv.org/abs/2301.12842"><heading>Direct Preference-based Policy Optimization without Reward Modeling</heading></a><br>
+                      <strong>Gaon An*, Junhyeok Lee*, Xingdong Zuo, Norio Kosaka, Kyung-Min Kim, Hyun Oh Song</strong><br>
+                      <em>NeurIPS</em>, 2023<br>
+                    </p>
+                    <details class="pitch"><summary>Interview pitch</summary>
+                      <b>DPPO</b> learns policies directly from preference labels (no reward model), improving robustness and efficiency on D4RL/Adroit/Kitchen and transferring to RLHF for LLMs.
+                    </details>
+                  </td>
                 </tr>
 
+                <!-- ICLR 2022 -->
                 <tr>
-                    <td width="33%" valign="top" align="center"><a
-                            href="https://www.researchgate.net/publication/336832476_Has_it_explored_enough"><img
-                            src="./images/paper_talk/thesis_image.png" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://www.researchgate.net/publication/336832476_Has_it_explored_enough"
-                               id="Thesis">
-                                <heading>Has it explored enough</heading>
-                            </a><br>
-                            <strong>Norio Kosaka</strong><br>
-                            <em>Master's Thesis at Royal Holloway, University of London</em>, Sep. 2019<br>
-                        </p>
-                    </td>
-                </tr>
-                    
-                <tr>
-                    <td width="33%" valign="top" align="center"><a
-                            href="https://www.youtube.com/watch?v=uraTzPbqG8s&t=5s"><img
-                            src="./images/paper_talk/rosdevcon2019.png" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://www.youtube.com/watch?v=uraTzPbqG8s&t=5s"
-                               id="rosdevcon19">
-                                <heading>Hindsight Experience Replay on ROS</heading>
-                            </a><br>
-                            <strong>Norio Kosaka</strong><br>
-                            <em>ROSDevCon19</em>, Jun. 2019<br>
-                        </p>
-                    </td>
+                  <td width="33%" valign="top" align="center"><a href="https://openreview.net/forum?id=MljXVdp4A3N"><img src="./images/paper_talk/ICLR2022_AGILE_teaser.gif" width="200" height="100" style="border-radius:15px"></a></td>
+                  <td width="67%" valign="top">
+                    <p>
+                      <a href="https://openreview.net/forum?id=MljXVdp4A3N"><heading>Know Your Action Set: Learning Action Relations for RL</heading></a><br>
+                      <strong>Ayush Jain*, Norio Kosaka*, Kyung-Min Kim, Joseph J Lim</strong><br>
+                      <em>ICLR</em>, 2022<br>
+                    </p>
+                    <details class="pitch"><summary>Interview pitch</summary>
+                      <b>AGILE</b> uses a graph-attention policy to model dependencies between available actions, boosting performance and generalisation in tool-use and recommender settings.
+                    </details>
+                  </td>
                 </tr>
 
+                <!-- IROS 2020 -->
                 <tr>
-                    <td width="33%" valign="top" align="center"><a
-                            href="https://github.com/Rowing0914/SLAM_Robot"><img
-                            src="./images/paper_talk/slam-car.jpg" alt="sym" width="200px" height="100px"
-                            style="border-radius:15px"></a>
-                    </td>
-                    <td width="67%" valign="top">
-                        <p>
-                            <a href="https://github.com/Rowing0914/SLAM_Robot"
-                               id="slam-car">
-                                <heading>DIY SLAM 3-Wheeled Car</heading>
-                            </a><br>
-                            <strong>Norio Kosaka</strong><br>
-                            <em>Individual Project</em>, Mar. 2019<br>
-                        </p>
-                    </td>
+                  <td width="33%" valign="top" align="center"><a href="https://arxiv.org/pdf/2003.00370.pdf"><img src="./images/paper_talk/IROS2020_PlaNetBayes.png" width="200" height="100" style="border-radius:15px"></a></td>
+                  <td width="67%" valign="top">
+                    <p>
+                      <a href="https://arxiv.org/pdf/2003.00370.pdf"><heading>PlaNet of the Bayesians: Improving Deep Planning Network with Bayesian Inference</heading></a><br>
+                      <strong>Masashi Okada, Norio Kosaka, Tadahiro Taniguchi</strong><br>
+                      <em>IROS</em>, 2020<br>
+                    </p>
+                    <details class="pitch"><summary>Interview pitch</summary>
+                      We add Bayesian model and action uncertainty (ensembles + probabilistic MPC) to PlaNet, improving planning robustness and sample efficiency on DeepMind Control Suite.
+                    </details>
+                  </td>
                 </tr>
-                    
+
+                <!-- RHUL MSc Thesis -->
+                <tr>
+                  <td width="33%" valign="top" align="center"><a href="https://www.researchgate.net/publication/336832476_Has_it_explored_enough"><img src="./images/paper_talk/thesis_image.png" width="200" height="100" style="border-radius:15px"></a></td>
+                  <td width="67%" valign="top">
+                    <p>
+                      <a href="https://www.researchgate.net/publication/336832476_Has_it_explored_enough"><heading>Has it explored enough?</heading></a><br>
+                      <strong>Norio Kosaka</strong><br>
+                      <em>MSc Thesis, Royal Holloway</em>, 2019<br>
+                    </p>
+                    <details class="pitch"><summary>Interview pitch</summary>
+                      An ablation-driven study of <b>DDPG</b> exploration (noise processes, BatchNorm, on/off-policy) vs <b>SAC</b>/GNN policies on MuJoCo, Centipede and gridworld, explaining when and why DDPG fails to explore.
+                    </details>
+                  </td>
+                </tr>
+
                 </tbody>
             </table>
 
-            <!-- ======= Extracurricular Activities ======= -->
-            <table width="100%" align="center" border="0" cellpadding="10">
-                <tbody>
-                    <tr>
-                        <td>
-                            <sectionheading>&nbsp;&nbsp;Extracurricular Activities</sectionheading>
-                            <ul>
-                                <li>
-                                    <heading>Robotics Club</heading><br>
-                                    <strong>Rakuten</strong>
-                                    <em>Tokyo, Japan</em>
-                                </li>
-                                <ul>
-                                    <li>Various Projects & Activities  
-                                        <a href="https://www.youtube.com/watch?v=O9FX34Rnq_A"> (Watch Video 1)</a>  
-                                        <a href="https://www.youtube.com/watch?v=EHrkcE9Lh1Q"> (Watch Video 2)</a>
-                                    </li>
-                                </ul>
-                            </ul>
-                            
-                            <ul>
-                                <li>
-                                    <heading>University Official Rowing Club</heading><br>
-                                    <strong>Waseda University</strong>
-                                    <em>Tokyo, Japan</em>
-                                </li>
-                                <ul>
-                                    <li>Achieved 5th place in Men’s 8+ at the 34th All-Japan Lightweight Championship (Japan Cup)
-                                        
-                        <a href="https://www.youtube.com/watch?v=3hM19ihWadQ"> (Watch Video)</a> 
-                        <a href="https://www.jara.or.jp/race/2012/2012lightweight_m8+.html"> (Results Table)</a></li>
-                                    <li>1st place in the 2013 Waseda-Keio Regatta 
-                        <a href="https://youtu.be/gtIYtNBe4-E?si=LDhU51eeAzymWc3F&t=198"> (Watch Video)</a>; 
-                        2nd place in the 2014 Waseda-Keio Regatta</li>
-                                </ul>
-                            </ul>
-                            
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            
-            <!-- ======= Access Map ======= -->
-            <table width="100%" align="center" border="0" cellpadding="10">
-                <tbody>
-                <tr>
-                    <td>
-                        <sectionheading>&nbsp;&nbsp;Access Map</sectionheading>
-                        <br>
-                        <script type="text/javascript" id="clustrmaps"
-                                src="//cdn.clustrmaps.com/map_v2.js?d=4_A2raLCnKEwNFgSq-0p8-fyqOTiDEXjtyV9Xz8dSX0&cl=ffffff&w=a"></script>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-
-            <!-- ======= Template Citation ======= -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td>
-                        <br>
-                        <p align="right">
-                            <font size="2">
-                                Template: <a href="http://people.eecs.berkeley.edu/~pathak/">this</a>
-                            </font>
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-
-            <!-- ====== End ====== -->
-            <!-- Don't Touch this part unless particularly needed -->
         </td>
     </tr>
     </tbody>
 </table>
-<script xml:space="preserve" language="JavaScript">
-hideallbibs();
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('jpm15_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('fg15_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('wacv15_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('iclr15_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('cvpr15_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('iccv15_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('jmlr16_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('cvpr16_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('iclr16_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('cvpr17_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('icml17_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('nips17_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('iclr18_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('icml18_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('cvprw18_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('iclr19_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('assemblies19_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('compgan18_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideblock('icml19_abs');
-</script>
-
-
 </body>
-<span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span
-        class="gr__triangle"></span></span></html>
+</html>
